@@ -1,0 +1,227 @@
+/* Google font start */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&display=swap');
+/* google font end */
+/* common css start */
+*{
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: rgb(0, 0, 0);
+}
+.shape{
+    font-family: "Parisienne", cursive;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+section{
+    padding-bottom:100px ;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.active{
+    background:  rgb(230, 83, 60);
+}
+.nav-item{
+    color: rgb(255,255,255);
+    font-size: 18px;
+    border-radius: 46px;
+    padding: 10px 40px;
+    transition: all linear 0.3s ;
+}
+.nav-item:hover{
+    background:  rgb(230, 83, 60);
+}
+.btn{
+    color: rgb(255,255,255);
+    background: none;
+    font-size: 18px;
+    border: 1px solid rgb(255,255,255);
+    margin-right: 20px;
+    border-radius: 46px;
+    padding: 14px 40px;
+    transition: all linear 0.3s ;
+}
+.btn:hover{
+    background:  rgb(230, 83, 60);
+}
+.sec-ttl{
+    color:rgb(255,255,255);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.sec-ttl-2{
+    color:rgb(255,255,255);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.sec-ttl-3{
+    color:rgb(255,255,255);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sec-text{
+    color:rgba(255,255,255,0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.logo-text{
+    color: rgb(230, 83, 60);
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+/* common css start */
+/* header section start */
+/* navbar section start */
+#header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+#header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#header .navbar{
+    padding: 50px 0;
+}
+#header .navbar .sec-ttl{
+    font-weight: 800;
+    font-size: 36px;
+}
+#header .nav-list{
+    border-radius: 46px;
+    padding: 10px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#header .navbar .icon{
+    color:rgb(255,255,255);
+    font-size: 26px;
+    display: none;
+}
+/* navbar section start */
+/* banner section start */
+#header .banner .sec-ttl{
+    font-size: 78px;
+}
+#header .banner .row{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+#header .banner .banner-img{
+    position: relative;
+}
+#header .banner .banner-img .workout,.video{
+    width: 193px;
+    height: 98px;
+    background:rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+#header .banner .banner-img .workout{
+    position: absolute;
+    right: -75px;
+    top: 130px;
+}
+#header .banner .banner-img .video{
+    position: absolute;
+    left: 130px;
+    bottom: 50px;
+}
+/* banner section end */
+/* header section End */
+/*----------------------------------------------------------------------------
+Responsive for mobile device
+----------------------------------------------------------------------------*/
+@media screen and (max-width:576px){
+    /* common css start*/
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px ;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec-ttl{
+        font-size: 32px;
+    }
+    .sec-ttl-2{
+        font-size: 22px;
+    }
+    .sec-ttl-3{
+        font-size: 14px;
+    }
+    .sec-text{
+        font-size: 11px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 12px 18px;
+    }
+    .d-none{
+        display: none;
+    }
+    /* responsive header section start*/
+    #header .navbar{
+        padding: 20px 0;
+    }
+    #header .navbar .sec-ttl{
+        font-weight: 800;
+        font-size: 30px;
+    }
+    #header .nav-list{
+        display: none;
+    }
+    #header .navbar .icon{
+        display: block;
+    }
+    /* responsive banner section */
+    #header .banner .row{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    #header .banner .banner-img img{
+        max-width: 100%;
+    }
+    #header .banner .banner-img .workout,.video{
+        width: 145px;
+        height: 74px;
+        padding: 10px;
+    }
+    #header .banner .banner-img .workout{
+        right: 10px;
+        top: 70px;
+    }
+    #header .banner .banner-img .video{
+        left: 10px;
+        bottom: 220px;
+    }
+    /* responsive banner section start*/
+    #header .banner .sec-ttl{
+        font-size: 36px;
+    }
+}
