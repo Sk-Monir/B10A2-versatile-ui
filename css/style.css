@@ -59,6 +59,7 @@ section{
 }
 .btn:hover{
     background:  rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
 }
 .sec-ttl{
     color:rgb(255,255,255);
@@ -109,6 +110,7 @@ section{
 #header .navbar .sec-ttl{
     font-weight: 800;
     font-size: 36px;
+    margin-bottom: 0;
 }
 #header .nav-list{
     border-radius: 46px;
@@ -162,7 +164,18 @@ section{
 }
 /* main section start */
 /* habits section start */
-#habits
+#habits .habit-item{
+    margin-top: 100px;
+}
+#habits .habit-item .row{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 40px;
+}
+#habits .habit-items img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
 /* habits section end */
 /* main section end */
 /* banner section end */
@@ -176,10 +189,6 @@ Responsive for mobile device
         width: 100%;
         margin: 0 auto;
         padding: 0 20px ;
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
     }
     section{
         margin-bottom:50 ;
@@ -241,8 +250,16 @@ Responsive for mobile device
         left: 10px;
         bottom: 220px;
     }
-    /* responsive banner section start*/
+    /* responsive banner section */
     #header .banner .sec-ttl{
         font-size: 36px;
+    }
+    /* responsive habit section  */
+    #habits .habit-item{
+        margin-top: 50px;
+    }
+    #habits .habit-item .row{
+        grid-template-columns: repeat(1 , 1fr);
+        column-gap: 20px;
     }
 }
