@@ -50,11 +50,12 @@ section{
 .btn{
     color: rgb(255,255,255);
     background: none;
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid rgb(255,255,255);
+    margin-top: 20px;
     margin-right: 20px;
     border-radius: 46px;
-    padding: 14px 40px;
+    padding: 12px 40px;
     transition: all linear 0.3s ;
 }
 .btn:hover{
@@ -95,7 +96,9 @@ section{
     text-align: right;
 }
 /* common css start */
-/* header section start */
+/*----------------------------------------------------------------------
+header section start
+----------------------------------------------------------------------*/
 /* navbar section start */
 #header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
@@ -122,7 +125,7 @@ section{
     font-size: 26px;
     display: none;
 }
-/* navbar section start */
+/* navbar section end */
 /* banner section start */
 #header .banner .sec-ttl{
     font-size: 78px;
@@ -162,7 +165,13 @@ section{
     color:rgb(230, 83, 60);
     font-size: 30px;
 }
-/* main section start */
+/* banner section end */
+/*-----------------------------------------------------------------
+header section End
+-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+main section start
+-----------------------------------------------------------------*/
 /* habits section start */
 #habits .habit-item{
     margin-top: 100px;
@@ -177,16 +186,34 @@ section{
     margin-bottom: 30px;
 }
 /* habits section end */
+/* Run Section start */
+#run-sec .container{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 32px;
+}
+#run-sec .container .row{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap: 50px;
+    align-items: center;
+}
+#run-sec .container .row img{
+    max-width: 100%;
+    border-radius: 18px;
+}
+#run-sec .btn{
+    width: 50%;
+}
+/* Run Section End */
 /* main section end */
-/* banner section end */
-/* header section End */
 /*----------------------------------------------------------------------------
 Responsive for mobile device
 ----------------------------------------------------------------------------*/
 @media screen and (max-width:576px){
-    /* common css start*/
+    /* responsive common css start */
     .container{
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         padding: 0 20px ;
     }
@@ -208,6 +235,7 @@ Responsive for mobile device
     .btn{
         font-size: 13px;
         padding: 12px 18px;
+        margin-top: 5px;
     }
     .d-none{
         display: none;
@@ -262,4 +290,20 @@ Responsive for mobile device
         grid-template-columns: repeat(1 , 1fr);
         column-gap: 20px;
     }
+    /* Run section start */
+    #run-sec .container{
+        padding: 26px;
+    }
+    #run-sec .container .row{
+        grid-template-columns: repeat(1 , 1fr);
+        column-gap: 0px;
+        row-gap: 20px;
+        align-items: center;
+    }
+    #run-sec .btn{
+        width: 100%;
+    }
 }
+/*----------------------------------------------------------------------------
+Responsive for mobile device
+----------------------------------------------------------------------------*/
