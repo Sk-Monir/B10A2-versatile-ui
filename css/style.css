@@ -101,7 +101,7 @@ header section start
 ----------------------------------------------------------------------*/
 /* navbar section start */
 #header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(32, 32, 32),rgba(0, 0, 0, 0) 100%);
 }
 #header .row{
     justify-content: space-between;
@@ -206,6 +206,62 @@ main section start
     width: 50%;
 }
 /* Run Section End */
+/* BMI Calculator Section start */
+#calculator > .container .sec-ttl{
+   padding-left: 300px;
+}
+#calculator > .container .sec-text{
+    padding-left: 300px;
+ }
+#calculator .calculator-item{
+    background: rgb(34, 34, 34);
+    padding: 40px 0;
+    margin-top: 100px;
+} 
+#calculator .calculator-item .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+}
+/* table start */
+#calculator .calculator-item table{
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 50px;
+}
+#calculator .calculator-item table th,
+#calculator .calculator-item table td
+{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    transition: all linear .3s;
+}
+#calculator .calculator-item table th:hover,
+#calculator .calculator-item table td:hover
+{
+    background: rgba(255, 255, 255, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* from start */
+#calculator .form .form-text {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+#calculator input,
+#calculator select,
+#calculator .factor{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+
+}
+.factor{
+    width: 100%;
+    margin: 15px 0;
+}
+/* BMI Calculator Section end */
 /* main section end */
 /*----------------------------------------------------------------------------
 Responsive for mobile device
@@ -218,7 +274,7 @@ Responsive for mobile device
         padding: 0 20px ;
     }
     section{
-        margin-bottom:50 ;
+        margin-bottom:50px;
     }
     .sec-ttl{
         font-size: 32px;
@@ -302,6 +358,42 @@ Responsive for mobile device
     }
     #run-sec .btn{
         width: 100%;
+    }
+    /* responsiveBmi calculator section*/
+    #calculator > .container .sec-ttl{
+        padding-left: 0;
+     }
+     #calculator > .container .sec-text{
+         padding-left: 0;
+      }
+     #calculator .calculator-item{
+         padding: 40px 0;
+         margin-top: 50px;
+     } 
+     #calculator .calculator-item .row{
+         grid-template-columns: repeat(1,1fr);
+         row-gap: 5px;
+     }
+     /* table */
+     #calculator .calculator-item table{
+        margin-top: 20px;
+    }
+    /* form */
+    #calculator .form .form-text {
+        gap: 10px;
+    }
+    #calculator input,
+    #calculator select,
+    #calculator .factor{
+        padding: 10px;
+        width:100%
+    
+    }
+    .factor{
+        margin: 10px 0;
+    }
+    #calculator .btn{
+        width: 50%;
     }
 }
 /*----------------------------------------------------------------------------
