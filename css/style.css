@@ -262,6 +262,34 @@ main section start
     margin: 15px 0;
 }
 /* BMI Calculator Section end */
+/* unique section start */
+#unique .container{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 32px;
+}
+#unique .container .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+#unique .unique-item{
+    margin-top: 50px;
+}
+#unique .unique-items{
+    padding: 10px ;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 18px;
+}
+#unique input{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 14px;
+    width: 40%;
+    margin-top: 20px;
+}
+/* unique section end */
 /* main section end */
 /*----------------------------------------------------------------------------
 Responsive for mobile device
@@ -395,6 +423,26 @@ Responsive for mobile device
     #calculator .btn{
         width: 50%;
     }
+    /* unique section start */
+#unique .container{
+    padding: 10px;
+}
+#unique .container .row{
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 10px;
+}
+#unique .unique-item{
+    margin-top: 20px;
+}
+
+#unique input{
+    width: 100%;
+    margin-top: 20px;
+}
+#unique .btn{
+    width:50%;
+}
 }
 /*----------------------------------------------------------------------------
 Responsive for mobile device
